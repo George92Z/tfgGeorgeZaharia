@@ -1,18 +1,29 @@
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@import "tailwindcss";
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@media (prefers-color-scheme: dark) {
+  .buttonsPag{
+    background-color: white;
+  }
+  body{
+    background-color: black;
+  }
+}
+html, body, #root {
+  height: 100%;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,12 +33,52 @@ a:hover {
   color: #535bf2;
 }
 
+/* Difuminado en la parte inferior */
+.contenido-modal::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px; /* altura del difuminado */
+  width: 100%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+}
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../fonts/Cakecafe.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.mifuente {
+  font-family: 'MiFuente';
+  font-size: 32px;
+  font-weight: bold;
+}
+.logoTitle{
+  font-family: 'MiFuente';
+  font-size: 20px;
+  font-weight: bold;
+}
+.textBorder{
+  text-shadow: 2px 0 #15b3cf, -2px 0 #15b3cf, 0 2px #15b3cf, 0 -2px #15b3cf,
+             1px 1px #15b3cf, -1px -1px #15b3cf, 1px -1px #15b3cf, -1px 1px #15b3cf;
+}
 body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  margin-top: 0;
   min-width: 320px;
-  min-height: 100vh;
+
+  
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
 }
 
 h1 {
@@ -35,6 +86,9 @@ h1 {
   line-height: 1.1;
 }
 
+.precio{
+  border-radius: 5px;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -71,9 +125,61 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #ffffff;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+
+.raton {
+  cursor: pointer;
+  color: rgb(0, 163, 163);
+}
+.color{
+  color: #ffffff;
+
+}
+.colorActive{
+  color:#a4ff88;
+}
+.ratonActive{
+  cursor: pointer;
+  color: rgb(253, 255, 146);
+  text-decoration: underline;
+}
+.colorActive.hover{
+  color: rgb(138, 247, 255);
+}
+.color:hover{
+  color: white;
+}
+.ratonFooter {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.colorFooter{
+  color: #f4fdff;
+
+}
+.colorFooter:hover{
+  color: #00ffd5;
+}
+.color2{
+  color: #29666d;
+}
+.option{
+  background: #ffffff;
+  background: radial-gradient(circle,rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 1) 2%, rgba(255, 255, 255, 1) 26%, rgba(255, 255, 255, 1) 56%, rgba(106, 211, 229, 0.44) 100%);
+}
+.swal2-confirm:focus,
+.swal2-cancel:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+input {
+  border: white;
+}
+button{
+  border: none;
 }

@@ -7,7 +7,7 @@ interface Props {
 
 export default function TablaUsuarios({ usuarios, onEditar }: Props) {
   const [paginaActual, setPaginaActual] = useState(1);
-  const elementosPorPagina = 3;
+  const elementosPorPagina = 10;
   const totalPaginas = Math.ceil(usuarios.length / elementosPorPagina);
 
   const usuariosPaginados = usuarios.slice(
@@ -15,33 +15,30 @@ export default function TablaUsuarios({ usuarios, onEditar }: Props) {
     paginaActual * elementosPorPagina
   );
   const renderNumerosDePagina = () => {
-    const maxNumeros = 4; // máximo de páginas centrales visibles
-    const numeros = [];
+    const numeros: (number | string)[] = [];
   
-    if (totalPaginas <= maxNumeros + 2) {
-      // Si hay pocas páginas, mostramos todas
+    if (totalPaginas <= 3) {
       for (let i = 1; i <= totalPaginas; i++) {
         numeros.push(i);
       }
     } else {
-      numeros.push(1); // Siempre mostrar el primero
+      numeros.push(1);
   
-      if (paginaActual > 3) {
+      if (paginaActual > 2) {
         numeros.push("...");
       }
   
-      const start = Math.max(2, paginaActual - 1);
-      const end = Math.min(totalPaginas - 1, paginaActual + 1);
-  
-      for (let i = start; i <= end; i++) {
-        numeros.push(i);
+      if (paginaActual !== 1 && paginaActual !== totalPaginas) {
+        numeros.push(paginaActual);
       }
   
-      if (paginaActual < totalPaginas - 2) {
+      if (paginaActual < totalPaginas - 1) {
         numeros.push("...");
       }
   
-      numeros.push(totalPaginas); // Siempre mostrar el último
+      if (totalPaginas > 1) {
+        numeros.push(totalPaginas);
+      }
     }
   
     return (
@@ -70,41 +67,45 @@ export default function TablaUsuarios({ usuarios, onEditar }: Props) {
 
   return (
     <>
-      <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
-          <tr>
-            <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">Nombre</th>
-            <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">Email</th>
-            <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          {usuariosPaginados.map(u => (
-            <tr key={u.id} className="border-b border-gray-200 dark:border-gray-700">
-              <td className="px-6 py-4">{u.nombre}</td>
-              <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">{u.email}</td>
-              <td className="px-6 py-4">
-                <button type="button" className="text-gray-900 bg-grey border border-gray-300 me-2 mb-2" onClick={() => onEditar(u)}>Editar</button>
-              </td>
+    <div className='max-w-4xl mx-auto px-4'>
+      <table className="text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
+            <tr>
+              <th scope="col" className="px-6 py-1 bg-gray-50 dark:bg-gray-800">Nombre</th>
+              <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">Email</th>
+              <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">Acciones</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="flex justify-center-safe mt-10">
+          </thead>
+          <tbody>
+            {usuariosPaginados.map(u => (
+              <tr key={u.id} className="border-b border-gray-200 dark:border-gray-700">
+                <td className="px-6 py-1">{u.nombre}</td>
+                <td className="px-6 py-0 bg-gray-50 dark:bg-gray-800">{u.email.substring(0, 8) + "..."}</td>
+                <td className="px-6 py-1 flex items-center justify-center">
+                  <button type="button" className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5" onClick={() => onEditar(u)}><i className="fa-solid fa-user-plus"></i></button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="flex justify-center mt-10 mb-10">
+          <button  type="button"
+                className="text-gray-900 bg-white border border-gray-300 me-1 ms-1"
+          onClick={() => setPaginaActual(p => Math.max(p - 1, 1))} disabled={paginaActual === 1}>
+              <i className="fa-solid fa-arrow-left text-black"></i> 
+          </button>
+
+        {renderNumerosDePagina()}
+
         <button  type="button"
-              className="text-gray-900 bg-white border border-gray-300 me-1 ms-1"
-        onClick={() => setPaginaActual(p => Math.max(p - 1, 1))} disabled={paginaActual === 1}>
-            Anterior 
+                className="text-gray-900 bg-white border border-gray-300 me-1 ms-1"
+        onClick={() => setPaginaActual(p => Math.min(p + 1, totalPaginas))} disabled={paginaActual === totalPaginas}>
+            <i className="fa-solid fa-arrow-right text-black"></i> 
         </button>
-
-      {renderNumerosDePagina()}
-
-      <button  type="button"
-              className="text-gray-900 bg-white border border-gray-300 me-1 ms-1"
-       onClick={() => setPaginaActual(p => Math.min(p + 1, totalPaginas))} disabled={paginaActual === totalPaginas}>
-          Siguiente
-      </button>
+      </div>
     </div>
+      
+      
     </>
     
   );

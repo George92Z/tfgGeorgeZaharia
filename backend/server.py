@@ -1,57 +1,27 @@
-from flask import Flask, jsonify,request
+from flask import Flask
 from flask_cors import CORS
-import mysql.connector
+from app.routes.usuarios import usuarios_bp
+from app.routes.productos import productos_bp
+from app.routes.pedidos import pedidos_bp
+from app.routes.stripe_routes import stripe_bp
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True)
 
-# Conexión con tu base de datos (phpMyAdmin)
-conexion = mysql.connector.connect(
-    host="localhost",
-    user="root",           # o el usuario que tengas
-    password="",           # tu contraseña, si tienes
-    database="usuarios"  # cambia por el nombre real
-)
+# Registrar blueprints
+app.register_blueprint(usuarios_bp)
+app.register_blueprint(productos_bp)
+app.register_blueprint(pedidos_bp)
+# Registrar las rutas de Stripe
+app.register_blueprint(stripe_bp)
 
-@app.route("/usuarios", methods=["GET"])
-def obtener_todos_los_usuarios():
-    cursor = conexion.cursor(dictionary=True)
-    cursor.execute("SELECT * FROM usuarios")  # tu tabla
-    datos = cursor.fetchall()
-    cursor.close()
-    return jsonify(datos)
-
-@app.route("/usuarios/<int:id>", methods=["GET"])
-def obtener_usuario(id):
-    cursor = conexion.cursor(dictionary=True)
-    cursor.execute("SELECT * FROM usuarios WHERE id = %s", (id,))
-    datos = cursor.fetchone()  #fetchone() porque es solo uno
-    cursor.close()
-
-    if datos:
-        return jsonify(datos)
-    else:
-        return jsonify({"error": "Usuario no encontrado"}), 404
-    
-@app.route("/usuarios/<int:id>", methods=["PUT"])
-def actualizar_usuario(id):
-    datos = request.json
-    nombre = datos.get("nombre")
-    email = datos.get("email")
-    edad = datos.get("edad")
-    contrasenia = datos.get("contrasenia")
-    activo = datos.get("activo")
-
-    cursor = conexion.cursor()
-    cursor.execute("""
-        UPDATE usuarios
-        SET nombre = %s, email = %s, edad = %s, contrasenia = %s, activo = %s
-        WHERE id = %s
-    """, (nombre, email, edad, contrasenia,activo, id))
-    conexion.commit()
-    cursor.close()
-
-    return jsonify({"mensaje": "Usuario actualizado correctamente"})
+# Configuración del servidor
+API_HOST = os.getenv("API_HOST", True)
+API_PORT = int(os.getenv("API_PORT", "5000"))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host=API_HOST, port=API_PORT, debug=True)
