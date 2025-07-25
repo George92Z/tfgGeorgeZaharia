@@ -247,13 +247,13 @@ visuales con SweetAlert2 para mejorar la experiencia del usuario.
 4\) Planificación temporal del proyecto
 
 ![Gráfico El contenido generado por IA puede ser
-incorrecto.](media/image20.png){width="5.843323490813648in"
+incorrecto.](media/media/image20.png){width="5.843323490813648in"
 height="4.206237970253718in"}
 
 5\) Desarrollo del proyecto
 
 ![Interfaz de usuario gráfica El contenido generado por IA puede ser
-incorrecto.](media/image16.png){width="6.0in"
+incorrecto.](media/media/image16.png){width="6.0in"
 height="3.579861111111111in"}
 
 6\) Conclusiones
@@ -482,7 +482,8 @@ bloquear los puertos que la aplicación usa.
 **10.1 Cliente:**
 
 ![Interfaz de usuario gráfica, Aplicación, Sitio web El contenido
-generado por IA puede ser incorrecto.](media/image24.png){width="6.0in"
+generado por IA puede ser
+incorrecto.](media/media/image24.png){width="6.0in"
 height="2.876388888888889in"}
 
 Al entrar a la aplicación el usuario se encuentra en modo invitado
@@ -491,7 +492,7 @@ Pulsamos iniciar sesión arriba a la derecha:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image37.png){width="6.0in"
+incorrecto.](media/media/image37.png){width="6.0in"
 height="3.1951388888888888in"}
 
 Si el usuario no tiene cuenta puede optar por mantenerse en modo
@@ -499,20 +500,21 @@ invitado o registrarse. Si opta por darle a registrarse le redirige a la
 página de registro.
 
 ![Interfaz de usuario gráfica, Aplicación El contenido generado por IA
-puede ser incorrecto.](media/image22.png){width="6.0in"
+puede ser incorrecto.](media/media/image22.png){width="6.0in"
 height="7.45625in"}
 
 **10.2 Administrador:**
 
 ![Interfaz de usuario gráfica, Aplicación, Sitio web El contenido
-generado por IA puede ser incorrecto.](media/image34.png){width="6.0in"
+generado por IA puede ser
+incorrecto.](media/media/image34.png){width="6.0in"
 height="2.8069444444444445in"}
 
 Esta es la página de ver los usuarios paginados, arriba hay filtro de
 búsqueda tanto por nombre como email, si el usuario administrador opta
 por darle a este icono de cada fila de la tabla:
 
-![](media/image26.png){width="3.510906605424322in"
+![](media/media/image26.png){width="3.510906605424322in"
 height="0.5000699912510936in"}
 
 Le aparecerá un modal con los datos del usuario, si pulsa en la foto de
@@ -521,41 +523,43 @@ se cierra el modal:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación El contenido generado
 por IA puede ser
-incorrecto.](media/image21.png){width="2.5842290026246717in"
+incorrecto.](media/media/image21.png){width="2.5842290026246717in"
 height="2.5309897200349956in"} ![Una captura de pantalla de un celular
 con texto e imágenes El contenido generado por IA puede ser
-incorrecto.](media/image28.png){width="3.1457720909886264in"
+incorrecto.](media/media/image28.png){width="3.1457720909886264in"
 height="2.524627077865267in"}
 
 Si en el navbar el usuario presiona el apartado de usuario en la
 siguiente parte:
 
 ![Interfaz de usuario gráfica, Aplicación El contenido generado por IA
-puede ser incorrecto.](media/image1.png){width="6.0in"
+puede ser incorrecto.](media/media/image1.png){width="6.0in"
 height="2.8625in"}
 
 Aparece la página de editar usuario, si se pulsa editar el usuario
 saldrá un modal para editarlo correctamente:
 
 ![Interfaz de usuario gráfica, Aplicación El contenido generado por IA
-puede ser incorrecto.](media/image19.png){width="5.448676727909011in"
+puede ser
+incorrecto.](media/media/image19.png){width="5.448676727909011in"
 height="5.75080271216098in"}
 
 Si el usuario presiona al apartado de productos en el navbar, se
 visualizará la pantalla de productos en modo administrador.
 
 ![Interfaz de usuario gráfica, Sitio web El contenido generado por IA
-puede ser incorrecto.](media/image35.png){width="6.0in"
+puede ser incorrecto.](media/media/image35.png){width="6.0in"
 height="2.8652777777777776in"}
 
 Para editar productos, el usuario tiene que pulsar en el propio
 producto, tienen diferentes estados dependiendo del stock:
 
 ![Interfaz de usuario gráfica, Sitio web El contenido generado por IA
-puede ser incorrecto.](media/image27.png){width="2.2203619860017496in"
+puede ser
+incorrecto.](media/media/image27.png){width="2.2203619860017496in"
 height="2.8404265091863516in"} ![Interfaz de usuario gráfica, Texto,
 Aplicación El contenido generado por IA puede ser
-incorrecto.](media/image39.png){width="2.0267672790901137in"
+incorrecto.](media/media/image39.png){width="2.0267672790901137in"
 height="2.829640201224847in"}
 
 Si le da a editar se le abrirá un modal para editar correctamente el
@@ -563,24 +567,26 @@ producto:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación El contenido generado
 por IA puede ser
-incorrecto.](media/image25.png){width="2.2882272528433947in"
+incorrecto.](media/media/image25.png){width="2.2882272528433947in"
 height="2.958915135608049in"} ![Interfaz de usuario gráfica, Texto,
 Aplicación, Chat o mensaje de texto El contenido generado por IA puede
-ser incorrecto.](media/image38.png){width="2.275188101487314in"
+ser incorrecto.](media/media/image38.png){width="2.275188101487314in"
 height="2.9506332020997377in"}
 
 Si el usuario administrador pulsa el botón para añadir producto se le
 abrirá otro modal para incluir un producto nuevo:
 
 ![Interfaz de usuario gráfica, Aplicación, Sitio web El contenido
-generado por IA puede ser incorrecto.](media/image33.png){width="6.0in"
+generado por IA puede ser
+incorrecto.](media/media/image33.png){width="6.0in"
 height="3.876388888888889in"}
 
 Si el usuario pulsa en la parte de pedidos se le redirigirá a esta
 página:
 
 ![Interfaz de usuario gráfica, Aplicación, Sitio web El contenido
-generado por IA puede ser incorrecto.](media/image30.png){width="6.0in"
+generado por IA puede ser
+incorrecto.](media/media/image30.png){width="6.0in"
 height="2.8666666666666667in"}
 
 En esta página si el usuario pulsa el botón azul es para editar el
@@ -588,7 +594,7 @@ pedido:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image32.png){width="4.7194083552056in"
+incorrecto.](media/media/image32.png){width="4.7194083552056in"
 height="5.927910104986877in"}
 
 Si el pedido se edita le aparecerá una alerta confirmando si se editó
@@ -596,33 +602,33 @@ bien o mal:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image36.png){width="5.365332458442695in"
+incorrecto.](media/media/image36.png){width="5.365332458442695in"
 height="4.11515748031496in"}
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image7.png){width="5.354913604549432in"
+incorrecto.](media/media/image7.png){width="5.354913604549432in"
 height="3.8859590988626422in"}
 
 Parte para usuario cliente:
 
 ![Interfaz de usuario gráfica, Aplicación, Sitio web El contenido
-generado por IA puede ser incorrecto.](media/image23.png){width="6.0in"
-height="2.85625in"}
+generado por IA puede ser
+incorrecto.](media/media/image23.png){width="6.0in" height="2.85625in"}
 
 Ahora si el usuario pulsa un producto, se le abrirá un modal con las
 siguientes partes:
 
 ![Imagen de la pantalla de un celular con texto e imagen El contenido
 generado por IA puede ser
-incorrecto.](media/image2.png){width="3.749323053368329in"
+incorrecto.](media/media/image2.png){width="3.749323053368329in"
 height="4.5178619860017495in"}
 
 Si presiona en la imagen se le abrirá gracias a la librería implementada
 de \`photo viewer'
 
 ![Imagen en blanco y negro El contenido generado por IA puede ser
-incorrecto.](media/image31.png){width="6.0in"
+incorrecto.](media/media/image31.png){width="6.0in"
 height="3.036111111111111in"}
 
 Si el usuario pulsa en el botón de añadir al carrito, dependiendo de
@@ -632,7 +638,8 @@ Stock (si hay stock le dejara meter la cantidad que quede, si no hay
 stock el botón de añadir al carrito se mantendrá desactivado)
 
 ![Interfaz de usuario gráfica, Aplicación El contenido generado por IA
-puede ser incorrecto.](media/image6.png){width="3.8881233595800526in"
+puede ser
+incorrecto.](media/media/image6.png){width="3.8881233595800526in"
 height="4.797576552930884in"}
 
 En este ejemplo si el usuario mete más de 2 productos y pulsa el botón
@@ -640,20 +647,21 @@ añadir:
 
 ![Imagen de la pantalla de un celular con letras El contenido generado
 por IA puede ser
-incorrecto.](media/image10.png){width="3.3080588363954506in"
+incorrecto.](media/media/image10.png){width="3.3080588363954506in"
 height="3.6537642169728786in"}
 
 Si esta todo correcto le saldrá este aviso:
 
 ![Interfaz de usuario gráfica, Aplicación El contenido generado por IA
-puede ser incorrecto.](media/image11.png){width="3.027602799650044in"
+puede ser
+incorrecto.](media/media/image11.png){width="3.027602799650044in"
 height="2.5208989501312336in"}
 
 Si el usuario quiere mirar la cesta, tiene que pulsar en el menú el
 apartado "cesta":
 
 ![Interfaz de usuario gráfica, Texto, Aplicación El contenido generado
-por IA puede ser incorrecto.](media/image9.png){width="6.0in"
+por IA puede ser incorrecto.](media/media/image9.png){width="6.0in"
 height="2.852777777777778in"}
 
 En esta página, se puede seleccionar método de envío, si se pulsa el
@@ -662,13 +670,13 @@ pulsa el botón vaciar también se vacía por completo y si no hay
 productos en la cesta aparecerá de esta manera:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación El contenido generado
-por IA puede ser incorrecto.](media/image12.png){width="6.0in"
+por IA puede ser incorrecto.](media/media/image12.png){width="6.0in"
 height="1.988888888888889in"}
 
 Si el usuario pulsa el botón comprar, aparecerá este aviso:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación El contenido generado
-por IA puede ser incorrecto.](media/image17.png){width="6.0in"
+por IA puede ser incorrecto.](media/media/image17.png){width="6.0in"
 height="1.8104166666666666in"}
 
 Y la cesta se vaciará automáticamente.
@@ -677,7 +685,8 @@ Si el usuario pulsa el apartado "pedidos" en el menú le aparecerá la
 siguiente página:
 
 ![Interfaz de usuario gráfica, Aplicación, Sitio web El contenido
-generado por IA puede ser incorrecto.](media/image4.png){width="6.0in"
+generado por IA puede ser
+incorrecto.](media/media/image4.png){width="6.0in"
 height="2.8715277777777777in"}
 
 Si en la tabla pulsa la información puede eliminar o cancelar un pedido
@@ -689,34 +698,35 @@ Cancelar (si esta enviado o pendiente)
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image8.png){width="3.3097003499562554in"
+incorrecto.](media/media/image8.png){width="3.3097003499562554in"
 height="1.6553860454943132in"}
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image18.png){width="3.429877515310586in"
+incorrecto.](media/media/image18.png){width="3.429877515310586in"
 height="2.4945395888013997in"}
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image15.png){width="3.429874234470691in"
+incorrecto.](media/media/image15.png){width="3.429874234470691in"
 height="2.2313659230096237in"}
 
-![](media/image14.png){width="6.0in" height="0.2513888888888889in"}
+![](media/media/image14.png){width="6.0in"
+height="0.2513888888888889in"}
 
 Si se vuelve a pulsar ahora al estar cancelado es para eliminar el
 pedido:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de
 texto El contenido generado por IA puede ser
-incorrecto.](media/image3.png){width="4.708990594925634in"
+incorrecto.](media/media/image3.png){width="4.708990594925634in"
 height="2.354494750656168in"}
 
 Si el usuario pulsa el apartado del menú "Quienes somos" le llevara a la
 siguiente página:
 
 ![Interfaz de usuario gráfica El contenido generado por IA puede ser
-incorrecto.](media/image13.png){width="5.725222003499563in"
+incorrecto.](media/media/image13.png){width="5.725222003499563in"
 height="2.7433366141732285in"}
 
 Si el usuario pulsa en el apartado de contactar, tanto en la propia
@@ -725,18 +735,20 @@ página:
 
 ![Interfaz de usuario gráfica, Texto, Aplicación, Correo electrónico El
 contenido generado por IA puede ser
-incorrecto.](media/image29.png){width="4.240503062117235in"
+incorrecto.](media/media/image29.png){width="4.240503062117235in"
 height="2.018655949256343in"}
 
 Si en el navbar el usuario presiona en la parte del usuario:
 
 ![Interfaz de usuario gráfica, Aplicación El contenido generado por IA
-puede ser incorrecto.](media/image1.png){width="4.7473403324584424in"
+puede ser
+incorrecto.](media/media/image1.png){width="4.7473403324584424in"
 height="2.264876421697288in"}
 
 Aparece la página de perfil y editar perfil, si se pulsa editar el
 usuario saldrá un modal para editarlo correctamente:
 
 ![Interfaz de usuario gráfica, Aplicación El contenido generado por IA
-puede ser incorrecto.](media/image19.png){width="4.244078083989502in"
+puede ser
+incorrecto.](media/media/image19.png){width="4.244078083989502in"
 height="4.479410542432196in"}
